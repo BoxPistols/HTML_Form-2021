@@ -41,8 +41,9 @@
             <div class="column column-50">
               <label for="select-base">Select Base</label>
               <!-- <select name="select-base" id="select-base"> -->
-              <select name="select-base" id="select-base">
+              <select name="select-base" id="select-base" required>
                 // option size="n" / multiple
+                <option value="">選択してください</option>
                 <option value="option1">option1</option>
                 <option value="option2">option2</option>
                 <option value="option3">option3</option>
@@ -121,16 +122,16 @@
                 class="button button-outline submit"
                 type="submit"
                 onclick="show()"
-              />           
+              />
+            </div>
           </div>
-        </div>
-        <!-- //-->
-        
-        <!-- Result -->
-        <div class="row">
-        <div class="column column-20">
-            <span>Submit</span>
-            <h2>Result</h2>
+          <!-- //-->
+
+          <!-- Result -->
+          <div class="row">
+            <div class="column column-20">
+              <span>Submit</span>
+              <h2>Result</h2>
             </div>
             <code class="column column-80 result">
               <b>View Here ↓</b>
