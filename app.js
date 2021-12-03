@@ -31,7 +31,21 @@ const show = () => {
   }
   /* === Input / Selectの値はそのまま取得表示 === */
   if (x.value !== '') {
-    v.innerHTML = x.value + ' ' + s.value + ' ' + arr + ' ' + arrR;
+    v.innerHTML =
+      '<ul>' +
+      '<li>' +
+      x.value +
+      '</li>' +
+      '<li>' +
+      s.value +
+      '</li>' +
+      '<li>' +
+      arr.join('/') +
+      '</li>' +
+      '<li>' +
+      arrR +
+      '</li>' +
+      '</ul>';
   } else {
     alert('何か書いて');
   }
