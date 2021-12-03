@@ -5,7 +5,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Form Basic</title>
+    <title>Form Basic Vanilla JS</title>
     <link
       rel="stylesheet"
       href="//fonts.googleapis.com/css?family=Roboto+Slab"
@@ -24,7 +24,7 @@
           <!-- .row -->
           <div class="row">
             <div class="column">
-              <h1>Form Basic</h1>
+              <h1>Form Basic Vanilla JS</h1>
             </div>
           </div>
           <!-- // .row -->
@@ -34,7 +34,7 @@
             <!-- Input Base -->
             <div class="column column-50">
               <label for="input-base">Input Base</label
-              ><input type="text" id="input-base" value="input value" />
+              ><input type="text" id="input-base" value="inputValue" required />
             </div>
 
             <!-- Select Base -->
@@ -53,12 +53,11 @@
           </div>
           <!-- // -->
 
-          <!-- Check -->
           <div class="row">
             <!-- CheckBox -->
             <div class="column column-50">
               <fieldset id="check-base">
-                <legend>Legendタグ</legend>
+                <legend>Multi Select</legend>
                 <label
                   ><input
                     type="checkbox"
@@ -83,26 +82,54 @@
                 >
               </fieldset>
             </div>
+            <!-- Radio -->
+            <div class="column column-50">
+              <fieldset id="radio-base">
+                <legend>Select One</legend>
+                <label
+                  ><input
+                    type="radio"
+                    name="radioBase"
+                    value="RadioA"
+                    checked
+                    required
+                  />RadioA</label
+                >
+                <label
+                  ><input
+                    type="radio"
+                    name="radioBase"
+                    value="RadioB"
+                  />RadioB</label
+                >
+                <label
+                  ><input
+                    type="radio"
+                    name="radioBase"
+                    value="RadioC"
+                  />RadioC</label
+                >
+              </fieldset>
+            </div>
           </div>
           <!-- // -->
 
           <!-- Submit -->
           <div class="row">
             <div class="column">
-              <button
-                class="button button-outline"
-                type="button"
+              <input
+                class="button button-outline submit"
+                type="submit"
                 onclick="show()"
-              >
-                Submit
-              </button>
-            </div>
+              />           
           </div>
-          <!-- //-->
-
-          <!-- Result -->
-          <div class="row">
-            <div class="column column-20">
+        </div>
+        <!-- //-->
+        
+        <!-- Result -->
+        <div class="row">
+        <div class="column column-20">
+            <span>Submit</span>
               <h2>Result</h2>
             </div>
             <code class="column column-80 result">
