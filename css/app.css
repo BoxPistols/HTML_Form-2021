@@ -34,6 +34,11 @@ body {
 .column {
   margin: 8px 0;
 }
+@media only screen and (max-width: 640px) {
+  .column {
+    max-width: 100% !important;
+  }
+}
 
 /* Heading */
 h1,
@@ -46,6 +51,11 @@ h6 {
   margin-bottom: 2rem;
   margin-top: 0;
   margin: 0 0 0.2em;
+}
+
+.button.submit {
+  width: 100%;
+  margin: 0 0 32px 0;
 }
 
 /* Form */
@@ -94,6 +104,7 @@ legend {
   font-weight: 600;
   margin-bottom: 0.5em;
 }
+
 legend {
   padding: 4px 12px;
 }
@@ -102,7 +113,6 @@ legend {
 
 .row .column.result {
   padding: 4px 0.5em;
-  margin: 0 1rem;
   border: 4px solid lightgray;
 }
 
