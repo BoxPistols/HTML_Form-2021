@@ -14,7 +14,7 @@ const show = () => {
     // console.log(elems[i].checked); / console.log(elems[i].value);
     // チェックの入っているフォームの値だけ配列で取り出す
     if (elems[i].checked) {
-      elems[i].checked === true;
+      // elems[i].checked === true;
       arr.push(elems[i].value);
       // console.log(elems[i].value);
     }
@@ -31,7 +31,7 @@ const show = () => {
   }
   /* === Input / Selectの値はそのまま取得表示 === */
   if (x.value !== '') {
-    v.innerHTML = x.value + ', ' + s.value + ', ' + arr + ', ' + arrR;
+    v.innerHTML = x.value + ' ' + s.value + ' ' + arr + ' ' + arrR;
   } else {
     alert('何か書いて');
   }
