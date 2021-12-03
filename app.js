@@ -10,6 +10,7 @@ const v = document.querySelector('.view');
 
 const show = () => {
   this.addEventListener('submit', (event) => {
+    // Submitの無効
     event.preventDefault();
     // === CheckBox ===
     const arr = [];
