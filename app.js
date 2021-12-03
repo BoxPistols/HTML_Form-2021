@@ -53,7 +53,7 @@ const show = () => {
         '</ul>';
     } else {
       // HTMLのrequiredでも対応
-      alert('何か書いて');
+      alert('入力欄は必須です');
     }
   });
 };
