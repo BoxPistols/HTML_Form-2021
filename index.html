@@ -1,0 +1,118 @@
+<!-- html / 閉じが無いとCSS効かない => StackBlitzのバグ = 転載時は消す-->
+<!DOCTYPE html/>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form Test</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/milligram/1.3.0/milligram.min.css"
+    />
+    <link rel="stylesheet" type="text/css" href="css/app.css" />
+  </head>
+
+  <body>
+    <div class="wrap">
+      <div class="container">
+        <form id="formBasic" action="#">
+          <!-- .row -->
+          <div class="row">
+            <div class="column">
+              <h1>Form Basic</h1>
+            </div>
+          </div>
+          <!-- // .row -->
+
+          <!-- Input/Select -->
+          <div class="row">
+            <!-- Input Base -->
+            <div class="column column-50">
+              <label for="input-base">Input Base</label
+              ><input type="text" id="input-base" value="input value" />
+            </div>
+
+            <!-- Select Base -->
+            <div class="column column-50">
+              <label for="select-base">Select Base</label>
+              <!-- <select name="select-base" id="select-base"> -->
+              <select name="select-base" id="select-base">
+                // option size="n" / multiple
+                <option value="option1">option1</option>
+                <option value="option2">option2</option>
+                <option value="option3">option3</option>
+                <option value="option4">option4</option>
+                <option value="option5">option5</option>
+              </select>
+            </div>
+          </div>
+          <!-- // -->
+
+          <!-- Check -->
+          <div class="row">
+            <!-- CheckBox -->
+            <div class="column column-50">
+              <fieldset id="check-base">
+                <legend>Legendタグ</legend>
+                <label
+                  ><input
+                    type="checkbox"
+                    name="checkBase"
+                    value="ItemA"
+                  />ItemA</label
+                >
+                <label
+                  ><input
+                    type="checkbox"
+                    name="checkBase"
+                    value="ItemB"
+                    checked
+                  />ItemB</label
+                >
+                <label
+                  ><input
+                    type="checkbox"
+                    name="checkBase"
+                    value="ItemC"
+                  />ItemC</label
+                >
+              </fieldset>
+            </div>
+          </div>
+          <!-- // -->
+
+          <!-- Submit -->
+          <div class="row">
+            <div class="column">
+              <button
+                class="button button-outline"
+                type="button"
+                onclick="show()"
+              >
+                Submit
+              </button>
+            </div>
+          </div>
+          <!-- //-->
+
+          <!-- Result -->
+          <h2>Result</h2>
+          <div class="row">
+            <div class="column result">
+              <h3>Param...</h3>
+              <div class="flex">
+                <div class="res view"></div>
+                <div class="res choose"></div>
+              </div>
+            </div>
+          </div>
+          <!-- // -->
+        </form>
+      </div>
+      <!-- //.container -->
+    </div>
+    <!-- //.wrap -->
+    <script src="app.js"></script>
+  </body>
+</html>
