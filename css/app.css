@@ -4,17 +4,23 @@
 }
 
 /* ========== Utility Module  ========== */
+
 .flex {
   display: flex;
 }
 
 /* ========== Common Style ========== */
+
 :root {
   --border-color: #d1d1d1;
+  --family: 'Roboto Slab', serif;
 }
 body {
   color: #456;
+  font-weight: 400;
+  font-family: var(--family);
 }
+
 .wrap {
   margin: 4vh auto;
   max-width: 80vw;
@@ -37,7 +43,6 @@ h6 {
   letter-spacing: -0.1rem;
   margin-bottom: 2rem;
   margin-top: 0;
-  font-family: Arial, Helvetica, sans-serif;
   margin: 0 0 0.2em;
 }
 /* Form */
@@ -91,6 +96,7 @@ legend {
 }
 
 /* ========== Origin ========== */
+
 .row .column.result {
   padding: 4px 0.5em;
   margin: 0 1rem;
