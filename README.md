@@ -2,6 +2,13 @@
 
 [Edit on StackBlitz ⚡️](https://stackblitz.com/edit/web-platform-egnawg)
 
+GitHub: 
+https://boxpistols.github.io/HTML_Form-2021/
+
+GitHub Page:
+https://github.com/BoxPistols/HTML_Form-2021
+
+
 ## 共有事項
 
 - フォームの書き方
